@@ -9,11 +9,11 @@ import { FlightserService } from '../flightser.service';
 export class FlightComponent implements OnInit {
   rocket_Data: any;
   a: any = [];
-  selectedYear: any;
+  
 
   constructor(private httpser: FlightserService) {
     this.rocket_Data = [];
-    this.selectedYear = 0;
+    
   }
 
 
@@ -30,7 +30,7 @@ export class FlightComponent implements OnInit {
       this.rocket_Data = data;
     });
     this.a[0] = y;
-    this.selectedYear = y;
+    
     console.log(this.a);
 
   }
